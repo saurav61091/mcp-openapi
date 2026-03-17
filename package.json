@@ -52,5 +52,6 @@
   "homepage": "https://github.com/saurav61091/mcp-openapi#readme",
   "bugs": {
     "url": "https://github.com/saurav61091/mcp-openapi/issues"
-  }
+  },
+  "mcpName": "io.github.saurav61091/mcp-openapi"
 }

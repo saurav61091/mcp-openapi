@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.saurav61091/mcp-openapi",
+  "description": "Turn any OpenAPI spec into callable MCP tools for Claude — point it at any OpenAPI 3.x spec and Claude can call every endpoint through natural language.",
+  "repository": {
+    "url": "https://github.com/saurav61091/mcp-openapi",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-openapi",
+      "version": "1.0.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
