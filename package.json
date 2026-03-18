@@ -1,6 +1,6 @@
 {
   "name": "mcp-openapi-runner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server that turns any OpenAPI spec into callable tools for Claude",
   "keywords": [
     "mcp",
@@ -18,8 +18,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "mcp-openapi-runner": "./dist/index.js",
-    "mcp-openapi": "./dist/index.js"
+    "mcp-openapi-runner": "./dist/index.js"
   },
   "files": [
     "dist"
