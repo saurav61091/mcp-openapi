@@ -4,6 +4,8 @@
 
 Point `mcp-openapi` at any OpenAPI 3.x spec and Claude can call every endpoint through natural language. No custom integration code. No manual tool definitions. One line of config.
 
+[![mcp-openapi-runner MCP server](https://glama.ai/mcp/servers/saurav61091/mcp-openapi/badges/card.svg)](https://glama.ai/mcp/servers/saurav61091/mcp-openapi)
+
 ## Quick start
 
 Add to your Claude Desktop / Cursor / Cline MCP config:
