@@ -1,18 +1,28 @@
 {
   "name": "mcp-openapi-runner",
-  "version": "1.0.1",
-  "description": "MCP server that turns any OpenAPI spec into callable tools for Claude",
+  "version": "1.1.0",
+  "description": "MCP server that turns any OpenAPI 3.x spec into callable tools for Claude — zero config, instant API access",
   "keywords": [
     "mcp",
+    "mcp-server",
     "openapi",
     "swagger",
     "rest",
+    "rest-api",
     "api",
+    "api-client",
     "claude",
     "anthropic",
     "model-context-protocol",
     "llm",
-    "ai"
+    "ai",
+    "ai-tools",
+    "claude-desktop",
+    "cursor",
+    "cline",
+    "openapi3",
+    "api-gateway",
+    "developer-tools"
   ],
   "author": "saurav61091",
   "license": "MIT",
@@ -27,6 +37,10 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
@@ -39,8 +53,13 @@
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
+    "@vitest/coverage-v8": "^4.1.1",
+    "eslint": "^10.1.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.1"
   },
   "engines": {
     "node": ">=18"

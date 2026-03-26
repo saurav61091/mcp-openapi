@@ -5,3 +5,5 @@ dist/
 .DS_Store
 .mcpregistry_github_token
 .mcpregistry_registry_token
+coverage/
+promo/

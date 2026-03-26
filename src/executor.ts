@@ -36,7 +36,8 @@ export async function executeCall(
   spec: OpenAPIV3.Document,
   endpoint: EndpointInfo,
   parameters: Record<string, string | number | boolean>,
-  body: unknown
+  body: unknown,
+  extraHeaders: Record<string, string> = {}
 ): Promise<ApiResponse> {
   const baseUrl = getBaseUrl(spec);
   let urlPath = endpoint.path;
@@ -44,6 +45,7 @@ export async function executeCall(
   const headers: Record<string, string> = {
     Accept: "application/json",
     ...buildAuthHeaders(),
+    ...extraHeaders,
   };
 
   const params = (endpoint.operation.parameters ?? []) as OpenAPIV3.ParameterObject[];
